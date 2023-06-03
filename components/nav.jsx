@@ -17,7 +17,7 @@ export default function Nav ({isTransform,isSave}) {
         {menuShow &&
             <NavMovil toggleMenu={toggleMenu}/>
         }
-        <motion.div whileHover={{scale:1.2}} whileTap={{scale:1.1}} onClick={()=>{toggleMenu()}} className='w-10 h-10 rounded-full flex justify-center items-center bg-rose-600 text-xl'>
+        <motion.div whileHover={{scale:1.2}} whileTap={{scale:1.1}} onClick={()=>{toggleMenu()}} className='shadow-sm shadow-rose-800 w-10 h-10 rounded-full flex justify-center items-center bg-rose-600 text-xl'>
           <BiMenuAltLeft className="text-white"/>
         </motion.div>
         <div className={`${!isTransform&&'hidden'} md:hidden`}>

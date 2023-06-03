@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .bg_image{
-  background-color: red;
+  background-color: #30d467;
   background-image: url('/img/vegetales2.png');
   background-repeat: no-repeat;
   background-position: center;
