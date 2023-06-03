@@ -39,7 +39,7 @@ export default function Home() {
       </div>
       <div className='flex justify-center'>
         {data!=null?
-          <div className='grid grid-cols-2 md:grid-cols-3 lg:w-3/5 gap-4 justify-center items-center p-4'>
+          <div className='grid grid-cols-2 min-[550px]:grid-cols-3 max-[549px]:w-4/5 max-[450px]:w-11/12 max-[350px]:w-full lg:w-3/5 gap-4 justify-center items-center p-4'>
             {data?.map(menu=>(
               <motion.div key={menu.id} whileHover={{scale:1.1}} whileTap={{scale:1.05}}><CardFood data={menu} /></motion.div>
             ))}
