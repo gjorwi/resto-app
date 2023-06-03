@@ -10,13 +10,13 @@ import Login from './login/page'
 
 const poppins = Poppins({ subsets: ['latin'],weight:'400' })
 
-export const metadata = {
-  title: {
-    default:'Italian Food',
-      template: '%s | Italian Food',
-    },
-  description: 'Restaurante Gourmet',
-}
+// export const metadata = {
+//   title: {
+//     default:'Italian Food',
+//       template: '%s | Italian Food',
+//     },
+//   description: 'Restaurante Gourmet',
+// }
 
 export default function RootLayout({ children }) {
   const currentPath=usePathname()
