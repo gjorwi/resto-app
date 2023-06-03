@@ -1,0 +1,12 @@
+{
+  "menuItems":[
+    {
+      "text":"Home",
+      "enlace":"/"
+    },
+    {
+      "text":"Crear menu",
+      "enlace":"/addmenu"
+    }
+  ]
+}

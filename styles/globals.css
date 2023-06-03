@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg_image{
+  background-image: url('/img/figuras.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg_rgbaBlack{
+  background-color: rgba(0,0,0,0.5);
+}
