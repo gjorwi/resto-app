@@ -3,11 +3,18 @@
 @tailwind utilities;
 
 .bg_image{
-  background-image: url('/img/figuras.png');
+  background-color: red;
+  background-image: url('/img/vegetales2.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 .bg_rgbaBlack{
   background-color: rgba(0,0,0,0.5);
+}
+.bg_figuras{
+  background-image: url('/img/vegetales.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

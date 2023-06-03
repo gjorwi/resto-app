@@ -17,13 +17,13 @@ export default function Nav ({isTransform,isSave}) {
         {menuShow &&
             <NavMovil toggleMenu={toggleMenu}/>
         }
-        <motion.div whileHover={{scale:1.2}} whileTap={{scale:1.1}} onClick={()=>{toggleMenu()}} className='w-10 h-10 rounded-full flex justify-center items-center bg-white text-xl'>
-          <BiMenuAltLeft/>
+        <motion.div whileHover={{scale:1.2}} whileTap={{scale:1.1}} onClick={()=>{toggleMenu()}} className='w-10 h-10 rounded-full flex justify-center items-center bg-rose-600 text-xl'>
+          <BiMenuAltLeft className="text-white"/>
         </motion.div>
         <div className={`${!isTransform&&'hidden'} md:hidden`}>
           <motion.div whileHover={{scale:1.2}} whileTap={{scale:1.1}} className='flex bg-white justify-between rounded-full px-2 items-center'>
             <input type="text" className='outline-none pl-1'/>
-            <CgSearch className='m-2 text-xl'/>
+            <CgSearch className='m-2 text-xl text-rose-600'/>
           </motion.div>
         </div>
         {isSave&&

@@ -9,7 +9,7 @@ export default function CardFood({data}) {
     return (
         <motion.div initial={{opacity:0,y:'100%'}} animate={{opacity:1,y:0}} transition={{duration:0.75}} className={`rounded-lg bg-white ${homeStyle.shadow_per} h-52 max-w-4xl`}>
             <header className='w-full pt-4 flex relative justify-center'>
-                <AiOutlineHeart className='absolute top-0 right-0 m-3 text-xl text-slate-500 z-10'/>
+                <AiOutlineHeart className='absolute top-0 right-0 m-3 text-xl text-rose-600 z-10'/>
                 <div className="w-[90px] h-[90px] bg-slate-200 rounded-full overflow-hidden">
                     <MyFoto foto={'/img/platoComida.jpg'}/>
                 </div>

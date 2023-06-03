@@ -36,11 +36,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <AnimatePresence>
-        <body className={`${poppins.className} bg-red-300 select-none`}>
+        <body className={`${poppins.className} select-none`}>
           {currentPath==loginControl?
             <Login/>
             :<>
-              <div className='flex flex-col md:flex-row w-full h-screen bg-white bg_image'>
+              <div className='flex flex-col md:flex-row w-full h-screen bg-[#22c04f] bg_image'>
                 <motion.div layout className={`${isTransform ?'h-[25vh]':'h-[15vh]'}  md:h-full  ${isTransform ?'md:w-[20vw]':'md:w-[20vw]'} flex relative`}>
                   {isTransform&&
                     <div className={`absolute z-20 bottom-0 w-full -mb-14 md:mb-0  md:h-full flex justify-center items-center md:w-auto md:right-0 md:justify-end md:-mr-12 lg:-mr-28 `}>
@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
                   }
                   <Nav isTransform={isTransform} isSave={isSave}/>
                 </motion.div>
-                <motion.div layout className={`${isTransform ?'h-[75vh]':'h-[85vh]'} bg-slate-50  md:h-full  ${isTransform ?'md:w-[80vw]':'md:w-[90vw]'} rounded-t-[5vh] md:rounded-t-[0vh] md:rounded-l-[5vh] overflow-y-auto`}>
+                <motion.div layout className={`${isTransform ?'h-[75vh]':'h-[85vh]'} bg-slate-50 bg_figuras  md:h-full  ${isTransform ?'md:w-[80vw]':'md:w-[90vw]'} rounded-t-[5vh] md:rounded-t-[0vh] md:rounded-l-[5vh] overflow-y-auto`}>
                   {children}
                 </motion.div>
               </div>
