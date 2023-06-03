@@ -5,11 +5,9 @@ import {CgSearch} from 'react-icons/cg'
 import { useState } from 'react';
 import NavMovil from './navMovil';
 
-export default function Nav ({isTransform}) {
+export default function Nav ({isTransform,isSave}) {
   const [menuShow,setMenuShow]=useState(false)
-
   const toggleMenu = () => { 
-    console.log("algo")
     setMenuShow(!menuShow)
   }
 
@@ -28,9 +26,11 @@ export default function Nav ({isTransform}) {
             <CgSearch className='m-2 text-xl'/>
           </motion.div>
         </div>
-        <div className={`${isTransform&&'hidden'}`}>
-          <button onClick={()=>{}} className="py-2 rounded-full px-4 bg-rose-600 text-white">Guardar Menu</button>
-        </div>
+        {isSave&&
+          <div >
+            <button onClick={()=>{}} className="py-2 rounded-full px-4 bg-rose-600 text-white">Guardar Menu</button>
+          </div>
+        }
       </nav>
     </AnimatePresence>
   );
