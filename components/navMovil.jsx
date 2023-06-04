@@ -19,7 +19,7 @@ export default function NavMovil({toggleMenu}) {
             <main className='h-[80vh] w-full py-4 '>
               <Navegation toggleMenu={toggleMenu}/>
             </main>
-            <footer className="fixed bottom-0 left-0 w-full flex justify-center p-4">
+            <footer className="fixed bottom-0 left-0 w-full flex justify-end p-4">
               <Link href='/login'>
                 <button onClick={()=>toggleMenu()} className="py-2 px-6 bg-rose-600 rounded-full text-white">Iniciar sesion</button>
               </Link>
