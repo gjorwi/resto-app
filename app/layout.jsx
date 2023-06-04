@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
   },[currentPath])
 
   return (
-    <html lang="en">
+    <html lang="es">
       <AnimatePresence>
         <body className={`${poppins.className} select-none`}>
           {currentPath==loginControl?
