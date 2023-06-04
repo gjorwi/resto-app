@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
                   }
                   <Nav isTransform={isTransform} isSave={isSave}/>
                 </motion.div>
-                <motion.div layout className={`${isTransform ?'h-[75vh]':'h-[85vh]'} bg-slate-50 bg_figuras  md:h-full  ${isTransform ?'md:w-[80vw]':'md:w-[90vw]'} rounded-t-[5vh] md:rounded-t-[0vh] md:rounded-l-[5vh] overflow-y-auto`}>
+                <motion.div layout className={`${isTransform ?'h-[75vh]':'h-[85vh]'} bg-slate-50 bg_figuras  md:h-full  ${isTransform ?'md:w-[80vw]':'md:w-[90vw]'} rounded-t-[5vh]  md:rounded-l-[5vh] md:rounded-tr-[0vh] overflow-y-auto`}>
                   {children}
                 </motion.div>
               </div>
