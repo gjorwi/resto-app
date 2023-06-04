@@ -1,6 +1,7 @@
 'use client'
 import { motion,AnimatePresence } from "framer-motion"
 import {BiMenuAltLeft} from 'react-icons/bi'
+import {FaRegSave} from 'react-icons/fa'
 import {CgSearch} from 'react-icons/cg'
 import { useState } from 'react';
 import NavMovil from './navMovil';
@@ -29,7 +30,9 @@ export default function Nav ({isTransform,isSave}) {
           </div>
           {isSave&&
             <div >
-              <button onClick={()=>{}} className="py-2 rounded-full px-4 bg-rose-600 text-white">Guardar Menu</button>
+              <button onClick={()=>{}} className="p-4 rounded-full bg-rose-600 text-white">
+                <FaRegSave className="text-2xl "/>
+              </button>
             </div>
           }
         </nav>
