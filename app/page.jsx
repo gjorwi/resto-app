@@ -9,6 +9,7 @@ import { motion } from 'framer-motion'
 
 export default function Home() {
   const [data,setData]=useState([])
+  const [isClicked,setIsClicked]=useState(false)
   const [loading,setLoading]=useState(false)
 
   useEffect( () => {
@@ -25,15 +26,19 @@ export default function Home() {
     loadFunct()
   },[])
 
+  const handleList = (val) =>{
+    setIsClicked(val)
+  }
+
   if(!loading) return ( <Loading/> )
 
   return (
-    <main >
+    <main className='bg_figuras rounded-t-[5vh] overflow-y-auto'>
       <div className='w-full flex justify-center items-center gap-2 pt-16'>
-        <motion.div whileHover={{scale:1.1}} whileTap={{scale:1.05}} className={`${myFonts('midBold').className} rounded-full py-2 px-4 bg-yellow-400 ${homeStyle.shadow_per} text-slate-700 text-sm`}>
+        <motion.div onClick={()=>{handleList(false)}} whileHover={{scale:1.1}} whileTap={{scale:1.05}} className={`${myFonts('midBold').className} rounded-full py-2 px-4  ${homeStyle.shadow_per} ${!isClicked?'text-slate-700 bg-yellow-400':' text-cyan-950 bg-white'}  text-sm`}>
           Recomendado
         </motion.div>
-        <motion.div whileHover={{scale:1.1}} whileTap={{scale:1.05}} className={`${myFonts('midBold').className} rounded-full py-2 px-4 bg-white ${homeStyle.shadow_per} text-cyan-950 text-sm`}>
+        <motion.div onClick={()=>{handleList(true)}} whileHover={{scale:1.1}} whileTap={{scale:1.05}} className={`${myFonts('midBold').className} rounded-full py-2 px-4 ${isClicked?'text-slate-700 bg-yellow-400':' text-cyan-950 bg-white'} ${homeStyle.shadow_per} text-sm`}>
           Popular
         </motion.div>
       </div>
